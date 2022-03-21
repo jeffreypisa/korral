@@ -1,0 +1,20 @@
+<header class="header text-white d-flex align-items-center">
+	<div class="container-fluid"> 
+		<div class="row g-2">
+			<div class="col d-flex align-items-center">
+				<a class="header-brand" href="{{ site.url }}{% if lang == 'nl_NL' %}{% else %}/en/{% endif %}" rel="home">
+					<span class="d-none">{{ site.name }}</span>
+				</a>
+			</div>
+			<div class="col-auto">
+				<a id="mobilemenubtn" class="btn-menu d-block immune js-menu ">
+					<div class="lines">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,37 @@
+.mod-twocolors {
+	padding: 0 !important;
+	z-index: 2;
+	.bg-greylight, .bg-blue, .bg-green {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	i {
+		color: $green;
+		font-size: 60px;
+	}
+	img.circle {
+		width: 200px;
+		height: auto;
+		margin-bottom: 30px;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.mod-twocolors {
+		.bg-blue:before {
+			display: none;
+		}
+		img.circle {
+			width: 300px;
+			height: auto;
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.mod-twocolors {
+		.bg-greylight, .bg-blue, .bg-green {
+			padding-top: 90px;
+			padding-bottom: 60px;
+		}
+	}
+}

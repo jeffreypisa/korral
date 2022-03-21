@@ -1,0 +1,64 @@
+{% if item.achtergrond == 'bg-orange' %}
+	{% set knopkleur = 'btn-light' %}
+{% else %}
+	{% set knopkleur = 'btn-dark' %}
+{% endif %}
+
+<section id="section{{ sectionno }}" class="mod-evenementen {{ item.achtergrond }} {% if item.achtergrond == 'bg-orange' %}text-white{% endif %}" data-scroll-section>
+	{% if item.titel %}
+		<div class="container anime-fadein">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 text-center">
+					<h2> {{ item.titel }} </h2>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+	{% if item.primetime %}
+		{% set primetime = 'true' %}
+	{% endif %}
+	{% if item.weergave == 'custom' %}
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				{% for item in item.evenementen|slice(0,3) %}
+					{% if primetime == 'true' and loop.first %}
+						<div class="col-12 {% if primetime == 'true' %}primetime{% endif %}">
+							{% include ['tease-event-big.twig'] %}
+						</div>
+					{% else %}
+						<div class="{% if primetime == 'true' %}d-none d-lg-block{% endif %} col-lg-6">
+							{% include ['tease-event.twig'] %}
+						</div>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	{% else %}
+		<div class="container">
+			<div class="row">
+				{% for item in evenementen %}
+					{% if primetime == 'true' and loop.first %}
+						<div class="col-12 {% if primetime == 'true' %}primetime{% endif %}">
+							{% include ['tease-event-big.twig'] %}
+						</div>
+					{% else %}
+						<div class="{% if primetime == 'true' %}d-none d-lg-block{% endif %} col-lg-6">
+							{% include ['tease-event.twig'] %}
+						</div>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	{% endif %}  
+	<div class="text-center mt-4">
+		{% if lang == 'nl_NL' %}
+			<a href="{{ site.link }}/evenementen" class="btn {{ knopkleur }}"> 
+				Meer evenementen
+			</a>
+		{% else %}
+			<a href="{{ site.link }}/en/events" class="btn {{ knopkleur }}"> 
+				More events 
+			</a>
+		{% endif %}
+	</div>
+</section>

@@ -1,0 +1,58 @@
+.mod-samen {
+	background-image: url('../img/background_slider.svg');
+	background-size: cover;
+	background-position: center center;
+	.card {
+		border-radius: 30px;
+		border: 0;
+		text-align: center;
+		.card-body {
+			padding: 30px 15px;
+		}
+	}
+	.circle {
+		display: block;
+		background: $orange;
+		border-radius: 300px;
+		height: 220px;
+		width: 220px;
+		padding: 10px;
+		text-align: center;
+		color: #fff;
+		text-decoration: none;
+		span {
+			text-decoration: underline;
+		}
+		&:hover {
+			background: lighten($orange, 3%);
+			transform: scale(1.1);
+		}
+	}
+}
+
+
+
+@include media-breakpoint-up(lg) {
+	.mod-samen {
+		.card {
+			border-radius: 30px;
+			.card-body {
+				padding: 30px;
+			}
+		}
+		.circle {
+			position: absolute;
+			top: 220px;
+			right: 60px;
+		}
+		
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.mod-samen {
+		.circle {
+			right: 120px;
+		}
+	}
+}

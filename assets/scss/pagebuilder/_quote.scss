@@ -1,0 +1,37 @@
+.mod-quote {
+	position: relative;
+	padding: 0;
+	img {
+		width: auto;
+		height: 200px;
+		display: inline-block;
+	}
+	.slick-slide {
+		.item .container-fluid {
+			padding-top: 60px;
+			padding-bottom: 60px;
+			transform: translateY(80px);
+			transition: 2s all cubic-bezier(.19,1,.22,1);
+		}
+	}
+	.slick-slide.slick-active {
+		.item .container-fluid {
+			transform: translateY(0);
+			transition: 1s all cubic-bezier(.19,1,.22,1);
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.mod-quote {
+		.slick-slide {
+			.item .container-fluid {
+				padding-top: 120px;
+				padding-bottom: 120px;
+			}
+		}
+		img {
+			height: 300px;
+		}
+	}
+}

@@ -1,0 +1,57 @@
+footer {
+	padding: 60px 0 20px;
+	position: relative;
+	h6 {
+		opacity: 0.5;
+	}
+	.nav {
+		li {
+			display: block;
+			width: 100%;
+			&.nav-itemlang-item {
+				display: none;
+			}
+			a {
+				padding: 0;
+				color: #fff;
+			}
+		}
+	}
+	.mod-logos {
+		margin-top: 40px;
+	}
+	.subfooter {
+		padding-top: 40px;
+		font-size: 14px;
+		line-height: 18px;
+		color: rgba(255,255,255,.5);
+		a[href] {
+			font-size: 14px;
+			line-height: 18px;
+			color: rgba(255,255,255,.5);
+			text-decoration: none;
+			&:hover {
+				color: #fff !important;
+			}
+		}
+		a {
+			transition: 0.4 $ease;
+		}
+		a:hover {
+			color: $orange;
+		}
+	}
+	img {
+		width: 260px;
+		height: auto;
+		margin-bottom: 4px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	footer {
+		img {
+			margin-bottom: 0;
+		}
+	}
+}

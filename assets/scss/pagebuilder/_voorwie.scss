@@ -1,0 +1,26 @@
+.mod-voorwie {
+	background-image: url('../img/background_white.svg');
+	background-size: cover;
+	background-position: center center;
+	img {
+		width: auto;
+		height: 200px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.mod-voorwie {
+		img {
+			height: 240px;
+		}
+	}
+}
+
+
+@include media-breakpoint-up(xl) {
+	.mod-voorwie {
+		img {
+			height: 300px;
+		}
+	}
+}

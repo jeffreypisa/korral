@@ -1,0 +1,96 @@
+.tease {
+	.box {
+		position: relative;
+		padding: 15px;
+		background: $dark;
+		color: #fff;
+		transition: .4s $ease;
+		padding-bottom: 60px;
+		.read-more-text {
+			position: absolute;
+			right: 20px;
+			bottom: 15px;
+			color: $orange;
+			font-size: 16px;
+			font-weight: 600;
+		}
+	}
+	.image-holder {
+		color: #fff;
+		overflow: hidden;
+		z-index: 1;
+		.image {
+			transition: 2s $ease;
+			transform: scale(1.01);
+		}
+		.content {
+			.badge {
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+			}
+			.read-more {
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+				i {
+					transition: 1s $ease;
+					transform: scale(.7);
+				}
+			}
+		}
+	}
+	&:hover {
+		.box {
+			background: $orange;
+			.read-more-text {
+				color: #fff;
+			}
+		}
+		.image-holder {
+			.image {
+				transform: scale(1.2);
+				opacity: 0.8;
+				transition: 10s $ease;
+			}
+			.content {
+				.read-more {
+					i {
+						color: $orange;
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.primetime .tease {
+		margin: -44px -32px 30px;
+		display: block;
+		.image-holder {
+			padding-top: 110%;
+			.content {
+				padding: 30px;
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.tease {
+		.image-holder {
+			.content {
+				.read-more {
+					right: 30px;
+					bottom: 30px;
+				}
+				.badge {
+					left: 30px;
+					bottom: 30px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
+		{% include 'partial/home1_bannerslider.twig' %}
+		{% include 'partial/home2_over.twig' %}
+		{% include 'partial/home3_voorwie.twig' %}
+		{% include 'partial/home4_hoewerktdat.twig' %}
+		{% include 'partial/home5_infographics.twig' %}
+		{% include 'partial/home6_quote.twig' %}
+		{% include 'partial/home7_cta.twig' %}
+		{% include 'partial/home8_samen.twig' %}
+	</article>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% if item.achtergrond == 'bg-orange' %}
+	{% set knopkleur = 'btn-light' %}
+{% else %}
+	{% set knopkleur = 'btn-dark' %}
+{% endif %}
+
+<section id="section{{ sectionno }}" class="mod-blog {{ item.achtergrond }} {% if item.achtergrond == 'bg-orange' %}text-white{% endif %}" data-scroll-section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1 text-center">
+				{% if item.titel %}
+					<h2> {{ item.titel }} </h2>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	{% if item.weergave == 'recent' %}
+		<div class="container anime-fadein">
+			<div class="row justify-content-md-center">
+				{% for item in blog %}
+					<div class="col-md-4">
+						{% include ['tease-blog.twig'] %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	{% else %}
+		{% if item.artikelen %}
+			<div class="container anime-fadein">
+				<div class="row justify-content-md-center">
+					{% for item in item.artikelen|slice(0,3) %}
+						<div class="col-md-4">
+							{% include ['tease-blog.twig'] %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		{% endif %}  
+	{% endif %}
+	<div class="text-center mt-4">
+		{% if lang == 'nl_NL' %}
+			<a href="{{ site.link }}/blog" class="btn {{ knopkleur }}"> 
+				Meer blogs
+			</a>
+		{% else %}
+			<a href="{{ site.link }}/en/blog" class="btn {{ knopkleur }}"> 
+				More blog 
+			</a>
+		{% endif %}
+	</div>
+</section>

@@ -1,0 +1,30 @@
+.text-white {
+	color: #fff;
+	muted {
+		opacity: 0.4;
+	}
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6,
+	a {
+		color: #fff;
+	}
+	a {
+		&:hover {
+			color: $orange;
+		}
+	}
+	&.bg-orange {
+		a:hover:not(.btn) {
+			color: #fff;
+			text-decoration: underline
+		}
+	}
+}
+
+.bg-greylight, .bg-white {
+	color: $blue !important;
+}
+
+@include media-breakpoint-up(lg) {
+
+}
