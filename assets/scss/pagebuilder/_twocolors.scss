@@ -5,7 +5,7 @@
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
-	i {
+	i.fab {
 		color: $green;
 		font-size: 60px;
 	}
@@ -21,10 +21,6 @@
 		.bg-blue:before {
 			display: none;
 		}
-		img.circle {
-			width: 300px;
-			height: auto;
-		}
 	}
 }
 @include media-breakpoint-up(lg) {
@@ -32,6 +28,11 @@
 		.bg-greylight, .bg-blue, .bg-green {
 			padding-top: 90px;
 			padding-bottom: 60px;
+		}
+		img.circle {
+			width: 240px;
+			height: auto;
+			margin-bottom: 50px;
 		}
 	}
 }

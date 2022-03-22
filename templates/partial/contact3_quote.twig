@@ -4,18 +4,20 @@
 			<div class="item text-white d-flex align-items-center" style="background-image: url({{ item.achtergrond.url }})">		
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-4 d-flex align-items-center image" >
+						<div class="col-md-4 offset-xl-1 d-flex align-items-center image" >
 							<div class="w-100 text-center text-md-start">
-								<img src="{{ Image(item.afbeelding).url }}" class="mb-5 mb-md-0">
+								<img src="{{ Image(item.afbeelding).src }}" class="mb-5 mb-md-0">
 							</div>
 						</div>
-						<div class="col-md-8 d-flex align-items-center">
-							<div class="content text-right">
+						<div class="col-md-8 col-xl-7 d-flex align-items-center">
+							<div class="content text-right w-100">
 								<h2 class="weight-300">
 									{{ item.titel }} 
 								</h2>
-								{{ item.naam }} <br>
-								- {{ item.functie }}
+								<strong>
+									{{ item.naam }} <br>
+									- {{ item.functie }}
+								</strong>
 							</div>
 						</div>
 					</div>

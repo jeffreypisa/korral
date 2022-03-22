@@ -7,7 +7,7 @@
 			{% for item in post.get_field('voorwie_persona') %}
 				<div class="col-lg-4">
 					<div class="text-center">
-						<img src="{{ Image(item.afbeelding).url }}" class="mb-5">
+						<img src="{{ Image(item.afbeelding).src }}" class="mb-5">
 					</div>
 					<div class="row">
 						<div class="col-sm-10 offset-sm-1">

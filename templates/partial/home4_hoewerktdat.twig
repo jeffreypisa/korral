@@ -4,11 +4,11 @@
 			<div class="col-lg-6 bg-greylight waves waves-grey-top">
 				{% for item in post.get_field('lichtgrijs_usp') %}
 					<div class="item mb-5">
-						<div class="row">
+						<div class="row g-xl-5">
 							<div class="col-sm-auto d-flex align-items-center align-items-md-start">
 								<div class="circle">
 									{% if item.afbeelding %}
-										<img src="{{ Image(item.afbeelding).url }}" class="w-100 mb-5 h-auto">
+										<img src="{{ Image(item.afbeelding).src }}" class="w-100 mb-5 h-auto">
 									{% endif %}
 								</div>
 							</div>

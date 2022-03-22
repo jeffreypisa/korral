@@ -113,34 +113,7 @@ body {
 	margin-top: 60px;
 }
 
-@include media-breakpoint-down(md) {
-	body {
-		h1 {
-			font-size: 40px;
-			line-height: 47px;
-		}
-		h2 {
-			font-size: 32px;
-			line-height: 36px;
-		}
-		h3 {
-			font-size: 28px;
-			line-height: 32px;
-		}
-		h4 {
-			font-size: 23px;
-			line-height: 28px;
-		}
-		h5, h6 {
-			font-size: 18px;
-			line-height: 24px;
-		}
-		.lead {
-			font-size: 20px;
-			line-height: 30px;
-		}
-	}
-}
+
 
 @include media-breakpoint-down(sm) {
 	body {
@@ -171,6 +144,34 @@ body {
 	}
 }
 
+@include media-breakpoint-down(md) {
+	body {
+		h1 {
+			font-size: 40px;
+			line-height: 47px;
+		}
+		h2 {
+			font-size: 32px;
+			line-height: 38px;
+		}
+		h3 {
+			font-size: 28px;
+			line-height: 32px;
+		}
+		h4 {
+			font-size: 23px;
+			line-height: 28px;
+		}
+		h5, h6 {
+			font-size: 18px;
+			line-height: 24px;
+		}
+		.lead {
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+}
 
 .altfont {
 	text-transform: none;

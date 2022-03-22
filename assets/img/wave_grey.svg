@@ -1,1 +1,9 @@
-<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 26.88"><defs><style>.cls-1{fill:#d7e8e7;}</style></defs><path class="cls-1" d="M108,26.88H0C22.81,26.88,36.91,13,53.92.1l.09,0,0,0C71,12.92,85.2,26.88,108,26.88Z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108px" height="29px" viewBox="0 0 108 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>wave_blue</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wave_blue" transform="translate(-0.000000, 0.100000)" fill="#d7e8e7" fill-rule="nonzero">
+            <path d="M108,26.9041153 L108,27.9159854 L0,27.9159854 L0,26.9041153 C22.81,26.9041153 36.91,12.9 53.92,0 L54.01,0 C71,12.82 85.2,26.9041153 108,26.9041153 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

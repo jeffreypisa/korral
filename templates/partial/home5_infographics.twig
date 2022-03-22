@@ -6,7 +6,7 @@
 					<h2 class="text-green h3">{{ post.infographics_links_titel }}</h2>
 				{% endif %}
 				{% if post.infographics_links_afbeelding %}
-					<img src="{{ Image(post.infographics_links_afbeelding).url }}" class="w-100 mb-5 h-auto">
+					<img src="{{ Image(post.infographics_links_afbeelding).src }}" class="w-100 mb-5 h-auto">
 				{% endif %}
 				{% if post.infographics_links_tekst %}
 					{{ post.get_field('infographics_links_tekst') }}
@@ -17,7 +17,7 @@
 					<h2 class="text-green h3">{{ post.infographics_rechts_titel }}</h2>
 				{% endif %}
 				{% if post.infographics_rechts_afbeelding %}
-					<img src="{{ Image(post.infographics_rechts_afbeelding).url }}" class="w-100 mb-5 h-auto">
+					<img src="{{ Image(post.infographics_rechts_afbeelding).src }}" class="w-100 mb-5 h-auto">
 				{% endif %}
 				{% if post.infographics_rechts_tekst %}
 					{{ post.get_field('infographics_rechts_tekst') }}

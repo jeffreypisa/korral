@@ -9,7 +9,7 @@
 			</div>
 			<div class="col-lg-6 bg-blue text-white waves waves-blue-top">
 				{% if post.blauw_afbeelding %}
-					<img class="circle" src="{{ Image(post.blauw_afbeelding).url }}" class="w-100 h-auto mb-4">	
+					<img class="circle" src="{{ Image(post.blauw_afbeelding).src }}" class="w-100 h-auto mb-4">	
 				{% endif %}
 				{% if post.blauw_titel %}
 					<h3 class="h4 text-green">{{ post.blauw_titel }}</h3>

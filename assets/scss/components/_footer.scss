@@ -1,6 +1,7 @@
 footer {
 	padding: 60px 0 20px;
 	position: relative;
+	margin-top: -1px;
 	h6 {
 		opacity: 0.5;
 	}
@@ -50,6 +51,16 @@ footer {
 
 @include media-breakpoint-up(md) {
 	footer {
+		padding-top: 80px;
+		img {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	footer {
+		padding-top: 90px;
 		img {
 			margin-bottom: 0;
 		}

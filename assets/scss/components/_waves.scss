@@ -2,7 +2,7 @@
 	position: relative;
 	&:before {
 		position: absolute;
-		bottom: 0;
+		bottom: -1px;
 		left: 0;
 		right: 0;
 		height: 20px;
@@ -25,7 +25,7 @@
 	&.waves-white-inverted {
 		&:before {
 			background-image: url(../img/bolletje_white.svg);
-			bottom: -19.5px;
+			bottom: -19px;
 		}
 	}
 	&.waves-blue {
@@ -36,21 +36,21 @@
 	&.waves-green-top {
 		&:before {
 			background-image: url(../img/wave_green.svg);
-			top: -19.5px;
+			top: -19px;
 			background-position: right bottom;
 		}
 	}
 	&.waves-grey-top {
 		&:before {
 			background-image: url(../img/wave_grey.svg);
-			top: -19.5px;
+			top: -19px;
 			background-position: right bottom;
 		}
 	}
 	&.waves-blue-top {
 		&:before {
 			background-image: url(../img/wave_blue.svg);
-			top: -19.5px;
+			top: -19px;
 			background-position: left bottom;
 		}
 	}
