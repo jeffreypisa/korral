@@ -1,8 +1,33 @@
 {% if menu %}
 	<ul class="nav">
+		<li class="nav-item">
+			<a class="nav-link h3 mb-2 js-scrollto" href="{% if fn('is_front_page') %}#waaromkorral{% else %}{{ site.url }}/#waaromkorral{% endif %}">
+				Waarom Korral?
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link h3 mb-2 js-scrollto" href="{% if fn('is_front_page') %}#voorwieiskorral{% else %}{{ site.url }}/#voorwieiskorral{% endif %}">
+				Voor wie is Korral?
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link h3 mb-2 js-scrollto" href="{% if fn('is_front_page') %}#korralinjouworganisatie{% else %}{{ site.url }}/#korralinjouworganisatie{% endif %}">
+				Korral in jouw organisatie
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link h3 mb-2 js-scrollto" href="{% if fn('is_front_page') %}#hetontstaanvankorral{% else %}{{ site.url }}/#hetontstaanvankorral{% endif %}">
+				Het ontstaan van Korral
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link h3 mb-2 js-scrollto" href="{% if fn('is_front_page') %}#korraldoenwesamen{% else %}{{ site.url }}/#korraldoenwesamen{% endif %}">
+				Korral doen we samen
+			</a>
+		</li>
 		{% for item in items %}
 			<li class="nav-item {{ item.classes | join(' ') }}">
-				<a class="nav-link h2 mb-2" target="{{ item.target }}" href="{{ item.link }}">
+				<a class="nav-link h3 mb-2" target="{{ item.target }}" href="{{ item.link }}">
 					{{ item.title }}
 				</a>
 			</li>

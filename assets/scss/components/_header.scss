@@ -1,3 +1,11 @@
+.loaded {
+	header {
+		.header-brand {
+			transform: translateX(0);
+			opacity: 1;
+		}
+	}
+}
 article {
 	padding-top: 65px;
 }
@@ -19,6 +27,9 @@ header {
 		width: 108px;
 		background-size: contain;
 		background-repeat: no-repeat;
+		transform: translateX(-100%);
+		opacity: 0;
+		transition: 1s $ease;
 	}
 	ul {
 		list-style-type: none;

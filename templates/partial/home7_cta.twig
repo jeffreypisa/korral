@@ -1,7 +1,7 @@
-<section class="mod-cta" data-scroll-section>
+<section id="hetontstaanvankorral" class="mod-cta" data-scroll-section>
 	<div class="container-fluid">
 		<div class="row g-6">
-			<div class="col-lg-6 mb-5 mb-lg-0">
+			<div class="col-lg-6 mb-5 mb-lg-0 anime-fadein">
 				{% if post.cta_titel %}
 					<h2 class="text-green h3">{{ post.cta_titel }}</h2>
 				{% endif %}
@@ -13,7 +13,7 @@
 					<a class="btn btn-primary" href="{{ post.cta_link.url }}" target="{{ post.cta_link.target }}">{{ post.cta_link.title }}</a>
 				{% endif %}
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 anime-fadein">
 				<div class="js-slick-cta">
 					{% for item in post.get_field('cta_slider') %}
 						<div class="item">
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 		<br>
-		<div class="fish mt-5">
+		<div class="fish mt-5 ">
 			<div class="row g-3">
 				<div class="col">
 					<img src="{{ theme.link }}/assets/img/fish_green.svg" height="30" alt="fish" class="w-100 h-auto">

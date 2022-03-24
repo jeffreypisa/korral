@@ -89,7 +89,6 @@ body {
 	border: 0;
 }
 
-
 body .checkbox-wrap .nf-field-element label:after, 
 body .checkbox-wrap .nf-field-label label:after, 
 body .listcheckbox-wrap .nf-field-element label:after, 
@@ -185,7 +184,7 @@ body .listcheckbox-wrap .nf-field-label label.nf-checked-label:before {
 	.submit-wrap {
 		.nf-field-element {
 			&:after {
-				left: calc(100% - 66px);
+				left: calc(100% - 70px);
 				height: 64px;
 				width: 55px;
 				background-image: url(../img/button_orange.svg);

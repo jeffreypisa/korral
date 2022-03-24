@@ -1,12 +1,12 @@
-<section class="mod-toegang" data-scroll-section>
-	<div class="container-fluid">
+<section id="toegang" class="mod-toegang" data-scroll-section>
+	<div class="container-fluid anime-fadein">
 		<div class="row g-6 mb-5">
 			<div class="col-lg-8 offset-lg-2 text-center">
 				{% if post.toegang_titel %}
 					<h2 class="">{{ post.toegang_titel }}</h2>
 				{% endif %}
 				<div class="row">
-					<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+					<div class="col-10 offset-1 col-lg-8 offset-lg-2">
 						{% if post.toegang_afbeelding %}
 							<img src="{{ Image(post.toegang_afbeelding).src }}" class="w-100 h-auto mb-4">	
 						{% endif %}
