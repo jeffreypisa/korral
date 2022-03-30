@@ -37,6 +37,12 @@ body .nf-form-content label {
 	color: $dark;
 } 
 
+body {
+	.nf-form-content .listcheckbox-wrap li, .nf-form-content .listradio-wrap li {
+		margin-top: 12px !important;
+	}
+}
+
 body .nf-form-content .listcheckbox-wrap li, .nf-form-content .listradio-wrap li {
 	display: inline-block;
 }

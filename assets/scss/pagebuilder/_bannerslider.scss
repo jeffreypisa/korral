@@ -18,14 +18,25 @@
 		.item .container-fluid {
 			padding-top: 60px;
 			padding-bottom: 60px;
-			transform: translateY(80px);
-			transition: 2s all cubic-bezier(.19,1,.22,1);
+			
+			.image {
+				transform: translateX(-120px);
+				transition: 2s all cubic-bezier(.19,1,.22,1);
+			}
+			.content {
+				transform: translateX(120px);
+				transition: 2s all cubic-bezier(.19,1,.22,1);
+			}
 		}
 	}
 	.slick-slide.slick-active {
 		.item .container-fluid {
-			transform: translateY(0);
-			transition: 1s all cubic-bezier(.19,1,.22,1);
+			.image {
+				transform: translateX(0);
+			}
+			.content {
+				transform: translateX(0);
+			}
 		}
 	}
 	.item {
