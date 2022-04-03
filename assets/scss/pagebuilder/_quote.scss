@@ -9,6 +9,9 @@
 		height: 200px;
 		display: inline-block;
 	}
+	.item {
+		background-size: cover;
+	}
 	.slick-slide {
 		.item .container-fluid {
 			padding-top: 60px;
