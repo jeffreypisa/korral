@@ -63,17 +63,6 @@ body {
 	padding: 120px 0;
 	opacity: 0;
 	text-align: center;
-	&:before {
-		position: absolute;
-		content: '';
-		left: 0;
-		right: 0;
-		height: 0;
-		top: 0;
-		background: $blue;
-		transition: 2s $ease;
-		z-index: 99;
-	}
 	&:after {
 		position: absolute;
 		top: 0;
@@ -110,7 +99,6 @@ body.opensidemenu {
 	main {
 		filter: blur(2px);
 		transition: 0s $ease;
-		transition-delay: .5s;
 	}
 	.mod-mobilemenu {
 		opacity: 1;
@@ -118,11 +106,9 @@ body.opensidemenu {
 		transition: 0s $ease;
 		.menucontent {
 			opacity: 1;
-			transition-delay: 1s;
 		}
 		&:after {
 			transition: 0s $ease;
-			transition-delay: .5s;
 			opacity: .95;
 		}
 		&:before {
@@ -132,25 +118,25 @@ body.opensidemenu {
 			li {
 				animation: flyin 1s $ease forwards;
 				&:nth-child(1) {
-					animation-delay: 0.6s;
+					animation-delay: .1s;
 				}
 				&:nth-child(2) {
-					animation-delay: 0.8s;
+					animation-delay: .2s;
 				}
 				&:nth-child(3) {
-					animation-delay: 1s;
+					animation-delay: .3s;
 				}
 				&:nth-child(4) {
-					animation-delay: 1.2s;
+					animation-delay: .4s;
 				}
 				&:nth-child(5) {
-					animation-delay: 1.4s;
+					animation-delay: .5s;
 				}
 				&:nth-child(6) {
-					animation-delay: 1.6s;
+					animation-delay: .6s;
 				}
 				&:nth-child(7) {
-					animation-delay: 1.8s;
+					animation-delay: .7s;
 				}
 			}
 		}

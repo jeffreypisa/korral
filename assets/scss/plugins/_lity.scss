@@ -1,5 +1,12 @@
 .lity {
 	background: #fff;
+	&.lity-image {
+		img {
+			width: 95vw;
+			max-width: 96%;
+			margin: auto;
+		}
+	}	
 }
 .lity-close {
 	text-shadow: none;
@@ -34,4 +41,16 @@
 }
 .lity-content:after {
 	box-shadow: none;	
+}
+
+@include media-breakpoint-up(md) {
+	.lity {
+		background: #fff;
+		&.lity-image {
+			img {
+				width: 80vw;
+				margin: auto;
+			}
+		}	
+	}
 }

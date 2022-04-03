@@ -462,7 +462,7 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": ""
+                    "new_lines": "wpautop"
                 }
             ]
         },
@@ -943,7 +943,7 @@
         },
         {
             "key": "field_621e2ab1c1e87",
-            "label": "Link",
+            "label": "Circle link",
             "name": "samen_link",
             "type": "link",
             "instructions": "",
@@ -1069,6 +1069,21 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_6249c0a49018d",
+            "label": "Knop link",
+            "name": "samen_btn_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -1090,5 +1105,6 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1646237293
+    "show_in_rest": 0,
+    "modified": 1649005998
 }

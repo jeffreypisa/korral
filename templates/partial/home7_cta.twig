@@ -14,9 +14,9 @@
 				{% endif %}
 			</div>
 			<div class="col-lg-6 anime-fadein">
-				<div class="js-slick-cta">
+				<div class="__js-slick-cta">
 					{% for item in post.get_field('cta_slider') %}
-						<div class="item">
+						<div class="item mb-5">
 							<img src="{{ Image(item).src }})" alt="w-100 h-auto mb-4">		
 						</div>
 					{% endfor %}
