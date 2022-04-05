@@ -12,6 +12,9 @@
 	.item {
 		background-size: cover;
 	}
+	.slick-slider .slick-dots {
+		bottom: 10px;
+	}
 	.slick-slide {
 		.item .container-fluid {
 			padding-top: 60px;
@@ -24,6 +27,14 @@
 		.item .container-fluid {
 			transform: translateY(0);
 			transition: 1s all cubic-bezier(.19,1,.22,1);
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.mod-quote {
+		.slick-dots {
+			display: none;
 		}
 	}
 }
