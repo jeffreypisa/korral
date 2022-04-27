@@ -41,6 +41,9 @@
 	}
 	.item {
 		min-height: 400px;
+		h2 {
+			font-family: $font-family-base;
+		}
 		.image {
 			background-size:contain;
 			background-position: center;

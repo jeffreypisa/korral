@@ -14,6 +14,9 @@
 		height: auto;
 		margin-bottom: 30px;
 	}
+	a {
+		text-decoration: none;
+	}
 }
 
 @include media-breakpoint-down(lg) {

@@ -2,6 +2,9 @@
 	background-image: url('../img/background_toegang.svg');
 	background-size: cover;
 	background-position: center center;
+	.h3 {
+		font-family: $font-family-base;
+	}
 	.card {
 		border-radius: 30px;
 		border: 0;
@@ -40,7 +43,6 @@
 			text-decoration: underline;
 		}
 		&:hover {
-			background: lighten($orange, 3%);
 			transform: scale(1.1);
 		}
 	}

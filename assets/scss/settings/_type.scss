@@ -39,6 +39,24 @@
 }
 
 @font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+		url('../fonts/Montserrat-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Bruum FY';
+	src: url('../fonts/BruumFY-Black.woff2') format('woff2'),
+		url('../fonts/BruumFY-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
@@ -69,7 +87,7 @@
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
 $font-family-base:            'Montserrat Alternates';
-$font-family-alt:			  'Montserrat Alternates';
+$font-family-alt:			  'Montserrat';
 
 .altfont {
 	font-family: $font-family-alt;
@@ -111,6 +129,18 @@ body {
 * + h5,
 * + h6 {
 	margin-top: 60px;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+	font-family: 'Bruum FY';
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	font-family: 'Montserrat';
 }
 
 

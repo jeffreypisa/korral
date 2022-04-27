@@ -4,6 +4,9 @@ footer {
 	h6 {
 		opacity: 0.5;
 	}
+	h4 {
+		font-family: $font-family-alt;
+	}
 	.nav {
 		li {
 			display: block;
@@ -45,6 +48,16 @@ footer {
 		width: 260px;
 		height: auto;
 		margin-bottom: 4px;
+	}
+	.contact {
+		.label {
+			color: $green;
+			font-weight: 700;
+			display: inline-block;
+		}
+		a {
+			text-decoration: none;
+		}
 	}
 }
 

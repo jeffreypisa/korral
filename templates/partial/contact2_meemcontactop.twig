@@ -1,4 +1,4 @@
-<section class="mod-twocolors" data-scroll-section>
+<section id="contact" class="mod-twocolors" data-scroll-section>
 	<div class="container-fluid">
 		<div class="row g-6">
 			<div class="col-lg-6 bg-green waves waves-green-top text-white">
@@ -27,8 +27,10 @@
 							<i class="fab fa-linkedin-square"></i>
 						</a>
 					{% endif %}
-					<br><br><br><br>
-					{{ post.get_field('blauw_nieuwsbrief') }}
+					<div id="nieuwsbrief">
+						<br><br><br><br>
+						{{ post.get_field('blauw_nieuwsbrief') }}
+					</div>
 				</div>
 			</div>
 		</div>

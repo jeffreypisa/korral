@@ -87,6 +87,7 @@ body {
 				position: relative;
 				display: block;
 				transition: 0.4s $ease;
+				font-family: $font-family-alt;
 				&:hover, &:focus {
 					color: $orange;
 				}

@@ -6,6 +6,9 @@
 		width: auto;
 		height: 200px;
 	}
+	h3 {
+		font-family: $font-family-base;
+	}
 }
 
 @include media-breakpoint-up(md) {

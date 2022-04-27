@@ -24,22 +24,22 @@
 		</div>
 			
 		<div class="row g-5 g-xl-6">
-			{% for item in post.get_field('toegang_usp') %}
+			{% for usp in post.get_field('toegang_usp') %}
 				<div class="col-md-6 col-xl-3">
 					<div class="mb-5 text-center">
 						<div data-mh>
 							<div class="icon d-inline-block">
-								<img src="{{ Image(item.afbeelding).src }}" class="mb-5">
+								<img src="{{ Image(usp.afbeelding).src }}" class="mb-5">
 							</div>
-							{% if item.titel %}
-								<h2 class="h3 text-green">{{ item.titel }}</h2>
+							{% if usp.titel %}
+								<h2 class="h3 text-green">{{ usp.titel }}</h2>
 							{% endif %}
 							<div data-mh>
-								{{ item.tekst }}
+								{{ usp.tekst }}
 							</div>
-							{% if item.link %}
+							{% if usp.link %}
 								<br>
-								<a class="btn btn-primary" href="{{ item.link.url }}" target="{{ item.link.target }}">{{ item.link.title }}</a>
+								<a class="btn btn-primary" href="{{ usp.link.url }}" target="{{ usp.link.target }}">{{ usp.link.title }}</a>
 							{% endif %}
 						</div>
 					</div>

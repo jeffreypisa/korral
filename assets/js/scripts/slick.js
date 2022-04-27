@@ -14,6 +14,7 @@ export function slick_init() {
 		swipeToSlide: true,
 		speed: 2000,
 		fade: true,
+		pauseOnHover: false,
 		cssEase: 'cubic-bezier(.19,1,.22,1)'
 	});
 	
@@ -28,6 +29,7 @@ export function slick_init() {
 		autoplay: true,
 		swipeToSlide: true,
 		speed: 2000,
+		pauseOnHover: false,
 		cssEase: 'cubic-bezier(.19,1,.22,1)'
 	});
 	
@@ -40,6 +42,7 @@ export function slick_init() {
 		centerMode: true,
 		swipeToSlide: true,
 		speed: 2000,
+		pauseOnHover: false,
 		cssEase: 'cubic-bezier(.19,1,.22,1)',
 		adaptiveHeight: true
 	});

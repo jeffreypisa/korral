@@ -2,11 +2,22 @@
     <div class="container-fluid">
         <br>
         <div class="row">
-            <div class="col-md-auto">
-                <img src="{{ theme.link }}/assets/img/korral_logo_full.svg" width="155" height="68">
+            <div class="col-lg-8 col-xxl-9 d-flex align-items-end mb-4 mb-lg-0">
+                <div class="row">
+                    <div class="col-md-auto">
+                        <img src="{{ theme.link }}/assets/img/korral_logo_full.svg" width="155" height="68">
+                    </div>
+                    <div class="col-md d-flex align-items-end">
+                        <h4 class="text-green mb-0"> toegang samen regelen </h4>
+                    </div>
+                </div>
             </div>
-            <div class="col-md d-flex align-items-end">
-                <h4 class="text-green mb-0"> toegang samen regelen </h4>
+            <div class="col-lg-4 col-xxl-3 d-flex align-items-end">
+                <div class="contact">
+                    <div class="label">tel</div> <a href="{{ options.tel.url }}"> {{ options.tel.title }} </a> <br>
+                    <div class="label">mail</div> <a href="{{ options.mail.url }}"> {{ options.mail.title }} </a> <br>
+                    <div class="label">adres</div> {{ options.adres }} <br>
+                </div>
             </div>
         </div>
     </div>
