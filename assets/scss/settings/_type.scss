@@ -3,19 +3,28 @@
 // Font, line-height, and color for body text, headings, and more.
 
 @font-face {
-	font-family: 'Montserrat Alternates';
-	src: url('../fonts/MontserratAlternates-Light.woff2') format('woff2'),
-		url('../fonts/MontserratAlternates-Light.woff') format('woff');
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Light.woff2') format('woff2'),
+		url('../fonts/Montserrat-Light.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Montserrat Alternates';
-	src: url('../fonts/MontserratAlternates-Regular.woff2') format('woff2'),
-		url('../fonts/MontserratAlternates-Regular.woff') format('woff');
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+		url('../fonts/Montserrat-Regular.woff') format('woff');
 	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+		url('../fonts/Montserrat-Bold.woff') format('woff');
+	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
@@ -38,14 +47,7 @@
 	font-display: swap;
 }
 
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
-		url('../fonts/Montserrat-Bold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
+
 
 @font-face {
 	font-family: 'Bruum FY';
@@ -86,7 +88,7 @@
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-base:            'Montserrat Alternates';
+$font-family-base:            'Montserrat';
 $font-family-alt:			  'Montserrat';
 
 .altfont {
@@ -133,17 +135,12 @@ body {
 
 h1, .h1,
 h2, .h2,
-h3, .h3 {
-	font-family: 'Bruum FY';
-}
-
+h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
 	font-family: 'Montserrat';
 }
-
-
 
 @include media-breakpoint-down(sm) {
 	body {

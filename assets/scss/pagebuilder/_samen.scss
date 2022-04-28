@@ -23,6 +23,10 @@
 		span {
 			text-decoration: underline;
 		}
+		h3 {
+			font-family: 'Bruum FY';
+			font-weight: 900;
+		}
 		&:hover {
 			background: lighten($orange, 3%);
 			transform: scale(1.1);

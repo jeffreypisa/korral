@@ -377,6 +377,38 @@
       "oAP" : "\/assets\/fonts\/Montserrat-Bold.woff2",
       "oF" : 0
     },
+    "\/assets\/fonts\/Montserrat-Light.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Montserrat-Light.woff",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Montserrat-Light.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Montserrat-Light.woff2",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Montserrat-Regular.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Montserrat-Regular.woff",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Montserrat-Regular.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Montserrat-Regular.woff2",
+      "oF" : 0
+    },
     "\/assets\/fonts\/MontserratAlternates-Bold.woff" : {
       "cB" : 0,
       "ft" : 8192,
