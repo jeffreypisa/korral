@@ -6,6 +6,7 @@ footer {
 	}
 	h4 {
 		font-family: $font-family-alt;
+		margin: 0 !important;
 	}
 	.nav {
 		li {
@@ -67,6 +68,9 @@ footer {
 		img {
 			margin-bottom: 0;
 		}
+		h4 {
+			margin-bottom: 1px !important;
+		}
 	}
 }
 
@@ -75,6 +79,9 @@ footer {
 		padding-top: 90px;
 		img {
 			margin-bottom: 0;
+		}
+		h4 {
+			margin-bottom: 2px !important;
 		}
 	}
 }
